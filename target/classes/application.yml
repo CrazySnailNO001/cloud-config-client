@@ -1,0 +1,25 @@
+server:
+  port: 9999
+#spring:
+#  profiles:
+#    active: dev
+#    active: local
+
+#自动更新配置
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#    enabled-by-default: true
+#  metrics:
+#    tags:
+#      application: ${spring.application.name}
+#      environment: ${spring.profiles}
+
+eurekaServer:
+  port: NaN
+feign:
+  client:
+    provide:
+      name: NaN

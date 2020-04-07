@@ -1,0 +1,10 @@
+spring:
+  application:
+#    name: cloud-customer
+    name: cloud-config-client
+  cloud:
+    config:
+      uri: http://localhost:8760
+      label: master
+      profile: production
+#      enabled: false

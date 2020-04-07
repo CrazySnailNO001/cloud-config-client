@@ -1,0 +1,3 @@
+com/xzh/cloudconfigclient/CloudConfigClientApplication.class
+com/xzh/cloudconfigclient/controller/GitConfig.class
+com/xzh/cloudconfigclient/controller/ConfigController.class
