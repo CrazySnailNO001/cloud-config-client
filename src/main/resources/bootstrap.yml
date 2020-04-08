@@ -1,10 +1,12 @@
 spring:
   application:
-#    name: cloud-customer
     name: cloud-config-client
   cloud:
     config:
-      uri: http://localhost:8760
+#      uri: http://localhost:8760
       label: master
-      profile: production
+      profile: local
+      discovery:
+        enabled: true
+        service-id: cloud-config-server
 #      enabled: false
