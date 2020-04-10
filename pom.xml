@@ -71,6 +71,16 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+<!--										<target>8</target>-->
+<!--										<source>8</source>-->
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
@@ -115,7 +125,7 @@
 				<profileActive>local</profileActive>
 				<configLabel>master</configLabel>
 				<configServerId>cloud-config-server</configServerId>
-				<eurekaDefaultZone>http://localhost:8761/eureka/</eurekaDefaultZone>
+				<eurekaDefaultZone>http://xzhwxx.xyz:8761/eureka/</eurekaDefaultZone>
 				<configUri>http://localhost:8760</configUri>
 			</properties>
 		</profile>
@@ -128,7 +138,7 @@
 				<profileActive>preprod</profileActive>
 				<configLabel>master</configLabel>
 				<configServerId>cloud-config-server</configServerId>
-				<eurekaDefaultZone>http://localhost:8761/eureka/</eurekaDefaultZone>
+				<eurekaDefaultZone>http://xzhwxx.xyz:8761/eureka/</eurekaDefaultZone>
 			</properties>
 		</profile>
 		<profile>
@@ -140,7 +150,7 @@
 				<profileActive>production</profileActive>
 				<configLabel>master</configLabel>
 				<configServerId>cloud-config-server</configServerId>
-				<eurekaDefaultZone>http://localhost:8761/eureka/</eurekaDefaultZone>
+				<eurekaDefaultZone>http://xzhwxx.xyz:8761/eureka/</eurekaDefaultZone>
 			</properties>
 		</profile>
 	</profiles>

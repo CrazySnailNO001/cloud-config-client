@@ -1,9 +1,9 @@
 server:
   port: 9999
-#spring:
-#  profiles:
+spring:
+  profiles:
 #    active: dev
-#    active: @profileActive@
+    active: @profileActive@
 
 #自动更新配置
 management:
