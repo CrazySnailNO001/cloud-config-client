@@ -7,19 +7,31 @@ spring:
 
 #自动更新配置
 management:
+  endpoint:
+    shutdown:
+      enabled: false
   endpoints:
     web:
       exposure:
-        include: '*'
-    enabled-by-default: true
-  metrics:
-    tags:
-      application: ${spring.application.name}
-      environment: ${spring.profiles}
+        include: "*"
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#    enabled-by-default: true
+#  metrics:
+#    tags:
+#      application: ${spring.application.name}
+#      environment: ${spring.profiles}
+#  endpoint:
+    health:
+      show-details: always    #详细的应用健康信息
 
 eurekaServer:
-  port: NaN
+  port: defaultPort
 feign:
   client:
     provide:
-      name: NaN
+      name: defaultName
+      path: defaultPath

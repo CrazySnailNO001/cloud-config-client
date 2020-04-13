@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Data
-public class GitConfig {
+public class GitConfigData {
 
     @Value("${eurekaServer.port}")
     public String port;

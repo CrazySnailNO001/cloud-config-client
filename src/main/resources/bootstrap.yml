@@ -10,11 +10,13 @@ spring:
       discovery:
         enabled: true
         service-id: cloud-config-server
+      request-connect-timeout: 3000
+      request-read-timeout: 3000
 #      enabled: false
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-#      defaultZone: http://xzhwxx.xyz:8761/eureka/  连接腾讯云的ConfigServer的时候,eureka将其地址设为了内网地址,访问不通,所以一直timeout
+#      defaultZone: http://xzhwxx.xyz:8761/eureka/  #连接腾讯云的ConfigServer的时候,eureka将其地址设为了内网地址,访问不通,所以一直timeout
 #      defaultZone: @eurekaDefaultZone@
