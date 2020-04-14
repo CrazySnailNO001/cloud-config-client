@@ -16,6 +16,7 @@ target
 *.iws
 *.iml
 *.ipr
+/.idea/
 
 ### NetBeans ###
 /nbproject/private/
@@ -52,5 +53,3 @@ logs
 .DS_Store
 .docker
 git_stats
-/.idea/
-/.idea/libraries/
