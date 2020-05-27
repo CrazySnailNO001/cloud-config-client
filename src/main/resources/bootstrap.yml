@@ -12,6 +12,7 @@ spring:
         service-id: cloud-config-server
       request-connect-timeout: 3000
       request-read-timeout: 3000
+      name: cloud-config-client
 #      enabled: false
 
 eureka:
